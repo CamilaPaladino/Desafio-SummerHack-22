@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: 'Almarai', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+header img {
+    width: 130px;
+    padding-left: 25px;
+    padding-bottom: 0%;
+}
+
+nav {
+    width: 400px;
+    padding-right: 25px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 15px;
+    line-height: 45px;
+    padding-bottom: 5px;
+}
+
+a:hover {
+    color: white;
+}
+
+nav img {
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.splash {
+    display: flex;
+    align-content: center;
+    background-color: #3e413a;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    border-bottom: solid 2px #b3b3b3;
+}
+
+.splash img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    box-shadow: 3px 1px 29px 10px rgba(0, 0, 0, 0.48);
+}
+
+.titulares {
+    padding-left: 50px;
+    text-transform: capitalize;
+    color: white;
+    line-height: 12px;
+}
+
+.titulares h3 {
+    font-size: 12px;
+    line-height: 4px;
+}
+
+.titulares h1 {
+    font-size: 90px;
+}
+
+
+
+.player {
+    background-color: #3e413a;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 2px #b3b3b3;
+}
+
+.descripcion {
+    background-color: #1f201d;
+    text-align: center;
+    color: white;
+    padding: 25px 90px 15px 90px;
+}
+
+.descripcion p {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 25px;
+}
+
+.episodios {
+    background-color: #1f201d;
+    text-align: center;
+    color: white;
+    padding: 40px 50px 15px 50px;
+    margin-top: 0;
+}
+.contenedor-episodios {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0px 15px 50px;
+    height: auto;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.card {
+    width: 270px;
+    height: 380px;
+    color: #b3b3b3;
+    padding-bottom: 15px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    border: solid 1px #b3b3b3;
+    border-radius: 5%;
+    text-align: center;
+    font-family: 'M PLUS 1p', sans-serif;
+    box-shadow: 3px 1px 29px 10px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: white;
+}
+
+.card p {
+    font-size: 16px;
+    padding: 7px;
+}
+
+.episodios {
+    background-color: #1f201d;
+}
+
+.episodios h2 {
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    background-color: #1db954;
+    color: #1f201d;
+    padding: 10px;
+    border-radius: 5%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 50px;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+footer h2 {
+    font-size: 14px;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 200;
+}
+ 
+/*Media query para responsive*/
+
+@media (max-width: 747px) {
+    nav ul li {
+        display: none;
+    }
+
+    nav {
+        width: 200px;
+    }
+
+    .splash {
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulares {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .titulares h1 {
+        line-height: 80px;
+        margin: 30px;
+    }
+
+    .card {
+        min-width: 270px;
+        min-height: 380px;
+    }
+}
